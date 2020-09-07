@@ -1,0 +1,49 @@
+cabal-version: 3.0
+
+name:
+  boilerplate
+version:
+  0.1.0.0
+license-file:
+  LICENSE
+build-type:
+  Simple
+
+common lang-extensions
+  default-extensions:
+    , DoAndIfThenElse
+
+common build-dependencies
+  build-depends:
+    , base
+    , containers
+
+common test-dependencies
+  build-depends:
+    , hspec
+    , QuickCheck
+
+library
+  import:
+    , lang-extensions
+    , build-dependencies
+  hs-source-dirs: src/lib
+  exposed-modules:
+    , Lib
+  -- other-modules:
+  -- build-depends:
+  default-language: Haskell2010
+
+executable boilerplate-exe
+  import:
+    , lang-extensions
+    , build-dependencies
+  main-is: Main.hs
+  -- other-modules:
+  build-depends:
+    , boilerplate
+  hs-source-dirs:      src/exe
+  default-language:    Haskell2010
+
+  ghc-options: -threaded -rtsopts
+
