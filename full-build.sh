@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env sh
 
 echo "##### Regenerating default.nix #####"
 ./generate-default.nix.sh
