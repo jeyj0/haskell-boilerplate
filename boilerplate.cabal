@@ -39,7 +39,8 @@ executable boilerplate-exe
     , lang-extensions
     , build-dependencies
   main-is: Main.hs
-  -- other-modules:
+  other-modules:
+    , Main
   build-depends:
     , boilerplate
   hs-source-dirs:      src/exe
