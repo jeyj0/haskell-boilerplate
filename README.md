@@ -10,4 +10,15 @@ To change the project name, change all occurrences of "boilerplate" to the new p
 
 - Install nix
 - Install direnv and lorri, using nix: `nix-env -iA nixpkgs.lorri nixpkgs.direnv`
-  - hook direnv into your shell
+  - hook direnv into your shell: https://direnv.net/docs/hook.html
+
+## How to use
+
+- make sure the lorri daemon is running
+  - https://github.com/target/lorri/blob/master/contrib/daemon.md
+- cd into the project directory
+  - if you see a message from direnv saying to allow the `.envrc`, run `direnv allow` after making sure you trust this project
+  - run `./generate-default.nix.sh`
+  - after a while `nix` should have installed the dependencies and you should be able to use for example ghci 
+
+
