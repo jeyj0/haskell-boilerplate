@@ -27,12 +27,26 @@ library
   import:
     , lang-extensions
     , build-dependencies
+    , test-dependencies
   hs-source-dirs: src/lib
   exposed-modules:
     , Lib
   -- other-modules:
   -- build-depends:
   default-language: Haskell2010
+
+test-suite library-tests
+  import:
+    , lang-extensions
+    , build-dependencies
+    , test-dependencies
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  other-modules:
+    , Lib
+  build-depends:
+    , boilerplate
+  hs-source-dirs: src/lib
 
 executable boilerplate-exe
   import:
