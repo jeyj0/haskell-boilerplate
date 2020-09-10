@@ -55,3 +55,7 @@ For those who have, you should only have to be in the project directory.
   - for use within VSCod(e/ium), install the haskell-language-server VSCod(e/ium) extension and start VSCod(e/ium) from within the project directory (or nix-shell for those who haven't set up lorri and direnv)
 - entr (https://eradman.com/entrproject/) (a command-line file-watcher, used in the scripts)
 
+## Mac users
+
+Nix seems to want to recompile ghc and cabal when installing the project dependencies the first time. Run nix-shell after setting everything up and wait for a LONG time until it's done. This has taken 16 hours before, so don't do it when you need your Mac for heavy tasks in the time, or don't have access to power.
+
