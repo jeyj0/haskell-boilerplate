@@ -43,7 +43,7 @@ For those who have, you should only have to be in the project directory.
 
 ## What you get
 
-Apart from all project dependencies being properly set up, there's also some development tools that are automatically set up for you:
+Apart from all project dependencies being properly set up (including ghc (the haskell compiler) and ghci), there's also some development tools that are automatically set up for you:
 
 ### Requires to be in nix-shell
 
